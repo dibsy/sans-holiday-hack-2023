@@ -83,3 +83,24 @@ az functionapp function list --resource-group northpole-rg1
   }
 ]
 ```
+```
+elf@944d88b2171c:~$ az vm run-command invoke -g northpole-rg2 -n NP-VM1 --command-id RunShellScript --scripts "ls"
+{
+  "value": [
+    {
+      "code": "ComponentStatus/StdOut/succeeded",
+      "displayStatus": "Provisioning succeeded",
+      "level": "Info",
+      "message": "bin\netc\nhome\njinglebells\nlib\nlib64\nusr\n",
+      "time": 1703361311
+    },
+    {
+      "code": "ComponentStatus/StdErr/succeeded",
+      "displayStatus": "Provisioning succeeded",
+      "level": "Info",
+      "message": "",
+      "time": 1703361311
+    }
+  ]
+}
+```
