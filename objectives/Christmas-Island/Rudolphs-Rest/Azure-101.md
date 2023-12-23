@@ -1,3 +1,7 @@
+## Objective
+Help Sparkle Redberry with some Azure command line skills. Find the elf and the terminal on Christmas Island.
+
+## Solution
 ```
 az help | less
 ```
