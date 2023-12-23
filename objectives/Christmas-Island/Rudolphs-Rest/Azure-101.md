@@ -46,3 +46,40 @@ elf@944d88b2171c:~$ az group list --output table
 ```
 az functionapp function list --resource-group northpole-rg1
 ```
+
+```
+ az vm list --resource-group northpole-rg2
+
+[
+  {
+    "id": "/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourceGroups/northpole-rg2/providers/Microsoft.Compute/virtualMachines/NP-VM1",
+    "location": "eastus",
+    "name": "NP-VM1",
+    "properties": {
+      "hardwareProfile": {
+        "vmSize": "Standard_D2s_v3"
+      },
+      "provisioningState": "Succeeded",
+      "storageProfile": {
+        "imageReference": {
+          "offer": "UbuntuServer",
+          "publisher": "Canonical",
+          "sku": "16.04-LTS",
+          "version": "latest"
+        },
+        "osDisk": {
+          "caching": "ReadWrite",
+          "createOption": "FromImage",
+          "managedDisk": {
+            "storageAccountType": "Standard_LRS"
+          },
+          "name": "VM1_OsDisk_1"
+        }
+      },
+      "vmId": "e5f16214-18be-4a31-9ebb-2be3a55cfcf7"
+    },
+    "resourceGroup": "northpole-rg2",
+    "tags": {}
+  }
+]
+```
