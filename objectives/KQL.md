@@ -97,3 +97,8 @@ C:\Windows\System32\powershell.exe -Nop -ExecutionPolicy bypass -enc QzpcV2luZG9
 ```powershell
 C:\Windows\System32\downwithsanta.exe --wipeall \\\\NorthPolefileshare\\c$
 ```
+---------------
+```python
+print base64_decode_tostring('QmV3YXJlIHRoZSBDdWJlIHRoYXQgV29tYmxlcw==')
+Beware the Cube that Wombles
+```
