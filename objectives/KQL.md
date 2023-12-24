@@ -13,3 +13,11 @@ Employees
 Email
 | where link has "http://madelvesnorthpole.org/published/search/MonthlyInvoiceForReindeerFood.docx"
 ```
+---------------
+- What is the role of our victim in the organization? ```Head Elf```
+- What is the hostname of the victim's machine? ```Y1US-DESKTOP```
+- What is the source IP linked to the victim? ```10.10.0.4```
+```Kql
+Employees
+| where email_addr == "alabaster_snowball@santaworkshopgeeseislands.org"
+```
