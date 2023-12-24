@@ -21,3 +21,12 @@ Email
 Employees
 | where email_addr == "alabaster_snowball@santaworkshopgeeseislands.org"
 ```
+---------------
+- What time did Alabaster click on the malicious link? Make sure to copy the exact timestamp from the logs! ```2023-12-02T10:12:42Z```
+- What file is dropped to Alabaster's machine shortly after he downloads the malicious file? ```giftwrap.exe```
+---------------
+```Kql
+FileCreationEvents
+| where hostname == "Y1US-DESKTOP"
+| sort by timestamp
+```
