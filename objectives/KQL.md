@@ -54,3 +54,7 @@ net config
 systeminfo
 "C:\Users\alsnowball\AppData\Local\Microsoft\Teams\current\Teams.exe" --type=relauncher --no-sandbox --- 
 ```
+---------------
+- When was the attacker's first base64 encoded PowerShell command executed on Alabaster's machine? ```2023-12-24T16:07:47Z```
+- What was the name of the file the attacker copied from the fileshare? (This might require some additional decoding) ```NaughtyNiceList.txt```
+- The attacker has likely exfiltrated data from the file share. What domain name was the data exfiltrated to? ```giftbox.com```
