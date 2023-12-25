@@ -94,3 +94,24 @@ curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/
   ]
 }
 ```
+#### List all Resource Group
+```bash
+curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/json" -H "Cache-Control: no-cache" \
+  "https://management.azure.com/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourcegroups?api-version=2022-01-01"
+```
+```json
+{
+  "value": [
+    {
+      "id": "/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourceGroups/northpole-rg1",
+      "name": "northpole-rg1",
+      "type": "Microsoft.Resources/resourceGroups",
+      "location": "eastus",
+      "tags": {},
+      "properties": {
+        "provisioningState": "Succeeded"
+      }
+    }
+  ]
+}
+```
