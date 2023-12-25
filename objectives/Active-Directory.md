@@ -10,7 +10,7 @@ API_VERSION="2021-12-13"
 TOKEN_MGT=`curl -s -f -H "$HEADER" "$URL/identity/oauth2/token?api-version=$API_VERSION&resource=https://management.azure.com/" | jq -r '.access_token'`
 ```
 
-### Get Subscriptions
+#### Get Subscriptions
 
 ```bash
 curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/json" -H "Cache-Control: no-cache" \
@@ -43,5 +43,6 @@ curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/
     "value": 1
   }
 }
-
 ```
+
+#### List Resources within a Subscription
