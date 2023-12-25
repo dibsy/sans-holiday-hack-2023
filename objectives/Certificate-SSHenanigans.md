@@ -18,7 +18,9 @@ If you haven't heard of SSH certificates, Thomas Bouve gave an introductory talk
 
 Oh, and if you need to peek at the Function App code, there's a handy Azure REST API endpoint ( https://learn.microsoft.com/en-us/rest/api/appservice/web-apps/get-source-control ) which will give you details about how the Function App is deployed.
 
-
+```bash
+ssh monitor@ssh-server-vm.santaworkshopgeeseislands.org -i  mysshkey -i mysshkey.cert
+```
 ```bash
 monitor@ssh-server-vm:/$ echo "Management Token"
 curl -s -f -H "$HEADER" "$URL/identity/oauth2/token?api-version=$API_VERSION&resource=https://management.azure.com/"
