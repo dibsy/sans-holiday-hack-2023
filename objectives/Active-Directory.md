@@ -115,7 +115,7 @@ curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/
   ]
 }
 ```
-### Accessing the Vaults
+### Accessing the Keys Vaults
 ```bash
 TOKEN_VLT=`curl -s -f -H "$HEADER" "$URL/identity/oauth2/token?api-version=$API_VERSION&resource=https://vault.azure.net" | jq -r '.access_token'`
 ```
@@ -132,5 +132,28 @@ curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/
       "code": "ForbiddenByRbac"
     }
   }
+}
+```
+### Accessing the Secrets in Vault
+```bash
+curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/json" \
+  "https://northpole-it-kv.vault.azure.net/secrets?api-version=7.2"
+```
+```json
+{
+  "value": [
+    {
+      "id": "https://northpole-it-kv.vault.azure.net/secrets/tmpAddUserScript",
+      "attributes": {
+        "enabled": true,
+        "created": 1699564823,
+        "updated": 1699564823,
+        "recoveryLevel": "Recoverable+Purgeable",
+        "recoverableDays": 90
+      },
+      "tags": {}
+    }
+  ],
+  "nextLink": null
 }
 ```
