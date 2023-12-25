@@ -44,7 +44,31 @@ curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/
   }
 }
 ```
-
+#### Get Details about the Subscription
+```bash
+curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/json" -H "Cache-Control: no-cache" \
+  "https://management.azure.com/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64?api-version=2022-01-01"
+```
+```json
+{
+  "id": "/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64",
+  "authorizationSource": "Bypassed",
+  "managedByTenants": [],
+  "tags": {
+    "sans:application_owner": "SANS:R&D",
+    "finance:business_unit": "curriculum"
+  },
+  "subscriptionId": "2b0942f3-9bca-484b-a508-abdae2db5e64",
+  "tenantId": "90a38eda-4006-4dd5-924c-6ca55cacc14d",
+  "displayName": "sans-hhc",
+  "state": "Enabled",
+  "subscriptionPolicies": {
+    "locationPlacementId": "Public_2014-09-01",
+    "quotaId": "EnterpriseAgreement_2014-09-01",
+    "spendingLimit": "Off"
+  }
+}
+```
 #### List Resources within a Subscription
 ```bash
 curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/json" -H "Cache-Control: no-cache" \
