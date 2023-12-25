@@ -46,3 +46,27 @@ curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/
 ```
 
 #### List Resources within a Subscription
+```bash
+curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/json" -H "Cache-Control: no-cache" \
+  "https://management.azure.com/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resources?api-version=2022-01-01"
+```
+```json
+{
+  "value": [
+    {
+      "id": "/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourceGroups/northpole-rg1/providers/Microsoft.KeyVault/vaults/northpole-it-kv",
+      "name": "northpole-it-kv",
+      "type": "Microsoft.KeyVault/vaults",
+      "location": "eastus",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourceGroups/northpole-rg1/providers/Microsoft.KeyVault/vaults/northpole-ssh-certs-kv",
+      "name": "northpole-ssh-certs-kv",
+      "type": "Microsoft.KeyVault/vaults",
+      "location": "eastus",
+      "tags": {}
+    }
+  ]
+}
+```
