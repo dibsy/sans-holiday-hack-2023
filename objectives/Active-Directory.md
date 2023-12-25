@@ -115,3 +115,22 @@ curl -X GET -H "Authorization: Bearer $TOKEN_MGT" -H "Content-Type: application/
   ]
 }
 ```
+### Accessing the Vaults
+```bash
+TOKEN_VLT=`curl -s -f -H "$HEADER" "$URL/identity/oauth2/token?api-version=$API_VERSION&resource=https://vault.azure.net" | jq -r '.access_token'`
+```
+```bash
+curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/json" \
+  "https://northpole-it-kv.vault.azure.net/keys?api-version=7.2"
+```
+```json
+{
+  "error": {
+    "code": "Forbidden",
+    "message": "Caller is not authorized to perform action on resource.\r\nIf role assignments, deny assignments or role definitions were changed recently, please observe propagation time.\r\nCaller: appid=b84e06d3-aba1-4bcc-9626-2e0d76cba2ce;oid=600a3bc8-7e2c-44e5-8a27-18c3eb963060;iss=https://sts.windows.net/90a38eda-4006-4dd5-924c-6ca55cacc14d/\r\nAction: 'Microsoft.KeyVault/vaults/keys/read'\r\nResource: '/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourcegroups/northpole-rg1/providers/microsoft.keyvault/vaults/northpole-it-kv'\r\nAssignment: (not found)\r\nDenyAssignmentId: null\r\nDecisionReason: 'DeniedWithNoValidRBAC' \r\nVault: northpole-it-kv;location=eastus\r\n",
+    "innererror": {
+      "code": "ForbiddenByRbac"
+    }
+  }
+}
+```
