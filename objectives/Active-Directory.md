@@ -134,7 +134,7 @@ curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/
   }
 }
 ```
-### Accessing the Secrets in Vault
+#### Listing the Secrets in Vault
 ```bash
 curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/json" \
   "https://northpole-it-kv.vault.azure.net/secrets?api-version=7.2"
@@ -155,5 +155,24 @@ curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/
     }
   ],
   "nextLink": null
+}
+```
+#### Accessing the secrets in the vault
+```bash
+curl -X GET -H "Authorization: Bearer $TOKEN_VLT" -H "Content-Type: application/json" \
+"https://northpole-it-kv.vault.azure.net/secrets/tmpAddUserScript?api-version=7.2"
+```
+```json
+{
+  "value": "Import-Module ActiveDirectory; $UserName = \"elfy\"; $UserDomain = \"northpole.local\"; $UserUPN = \"$UserName@$UserDomain\"; $Password = ConvertTo-SecureString \"J4`ufC49/J4766\" -AsPlainText -Force; $DCIP = \"10.0.0.53\"; New-ADUser -UserPrincipalName $UserUPN -Name $UserName -GivenName $UserName -Surname \"\" -Enabled $true -AccountPassword $Password -Server $DCIP -PassThru",
+  "id": "https://northpole-it-kv.vault.azure.net/secrets/tmpAddUserScript/ec4db66008024699b19df44f5272248d",
+  "attributes": {
+    "enabled": true,
+    "created": 1699564823,
+    "updated": 1699564823,
+    "recoveryLevel": "Recoverable+Purgeable",
+    "recoverableDays": 90
+  },
+  "tags": {}
 }
 ```
