@@ -7,12 +7,18 @@ Speak with Chimney Scissorsticks on Steampunk Island about the interesting thing
 
 - Captain's Journal https://elfhunt.org/static/images/captainsJournal.png
 
-### Roles
+#### Roles
 ```
 radioUser
 radioMonitor
 radioDecoder
 GeeseIslandsSuperChiefCommunicationsOfficer
+```
+
+#### Locations / Paths
+```
+/jwtDefault/keys/capsPubKey.key
+/
 ```
 
 #### Captain's Pub Key
