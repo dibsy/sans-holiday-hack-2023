@@ -130,3 +130,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJISEMgMjAyMyBDYXB0YWluJ3MgQ29tbXM
 dcdFX.mp4 - 10426 Hz
 
 ```
+#### Get Arrested
+```
+Frequency : 10426 , Go-Date: 1224, Go-Time: 1200
+```
