@@ -18,7 +18,7 @@ GeeseIslandsSuperChiefCommunicationsOfficer
 #### Locations / Paths
 ```
 /jwtDefault/keys/capsPubKey.key
-/
+/jwtDefault/rMonitor.tok
 ```
 
 #### Captain's Pub Key
@@ -37,5 +37,4 @@ cx/lGVHFVxE1ptXP+asOAzK1wEezyDjyUxZcMMmV0VibzeXbxsXYvV3knScr2WYO
 qZ5ssa4Rah9sWnm0CKG638/lVD9kwbvcO2lMlUeTp7vwOTXEGyadpB0WsuIKuPH6
 uQIDAQAB
 -----END PUBLIC KEY-----
-
 ```
