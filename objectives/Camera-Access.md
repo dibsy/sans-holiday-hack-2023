@@ -43,6 +43,18 @@ INFO: The file with provider URIs is not present.
 INFO: Created user preferences directory.
 
 ```
+
+#### Connect to the Directory Service
+
+- This was already in the readme file in the zip which we downloaded to build our Docker image
+```
+maltcp://10.1.1.1:1024/nanosat-mo-supervisor-Directory
+```
+- Select the Camera option and click Connect to Selected Provider
+
+#### Enable the Camera App
+- Click on the camera and select runApp
+
 #### List the parameters which we can read
 ```bash
 root@cebd83b7652e:/opt/nmf/cli-tool# ./cli-tool.sh parameter list -r maltcp://10.1.1.1:1025/camera-Directory
