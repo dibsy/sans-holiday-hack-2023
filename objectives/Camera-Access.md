@@ -15,7 +15,34 @@ PublicKey = s0wzBpdsMyNsOjM7zMqauUAUFwoNTGv44HFOHdy5F0U=
 Endpoint = 34.70.170.253:51820
 AllowedIPs = 10.1.1.1/3
 ```
+``` bash
+# Copy/Paste works best with gedit in this vnc container
+gedit /etc/wireguard/wg0.conf
+# OR
+nano /etc/wireguard/wg0.conf
+# OR
+vim /etc/wireguard/wg0.conf
+```
 
+Then we need to take down the interface and bring it back up:
+
+``` bash
+# Bring down
+wg-quick down wg0
+# Bring up
+wg-quick up wg0
+```
+Then we run the consumer test tools
+```
+root@cebd83b7652e:/opt/nmf/consumer-test-tool# ./consumer-test-tool.sh 
+2023-12-27 00:43:54.042 esa.mo.helpertools.helpers.HelperMisc loadProperties
+INFO: Loading properties file:/opt/nmf/consumer-test-tool/consumer.properties
+2023-12-27 00:43:54.288 esa.mo.nmf.ctt.guis.ConsumerTestToolGUI <init>
+INFO: The file with provider URIs is not present.
+2023-12-27 00:43:54.656 java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+
+```
 #### List the parameters which we can read
 ```bash
 root@cebd83b7652e:/opt/nmf/cli-tool# ./cli-tool.sh parameter list -r maltcp://10.1.1.1:1025/camera-Directory
