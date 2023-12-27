@@ -55,6 +55,12 @@ maltcp://10.1.1.1:1024/nanosat-mo-supervisor-Directory
 #### Enable the Camera App
 - Click on the camera and select runApp
 
+#### Connect to Camera Directory Service and Connect to the of "Parameter" Service Provider
+ 
+#### Enable the "generationEnabled" of "NumberOfSnapsTaken" and "Base64SnapImage" Parameter Service
+
+#### Go the Action Tab and submit action for "Action Services" of "Base64SnapImage"
+
 #### List the parameters which we can read
 ```bash
 root@cebd83b7652e:/opt/nmf/cli-tool# ./cli-tool.sh parameter list -r maltcp://10.1.1.1:1025/camera-Directory
