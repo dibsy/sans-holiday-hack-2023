@@ -3,6 +3,19 @@ Gain access to Jack's camera. What's the third item on Jack's TODO list?
 
 ## Solution
 
+#### Start the GateXOR to get the Wireguard Client Keys
+```
+[Interface]
+Address = 10.1.1.2/24
+PrivateKey = KzOKjYql2NFLfoiaZ1S75+1FXKA58cfLdfj8AJan8L4=
+ListenPort = 51820
+
+[Peer]
+PublicKey = s0wzBpdsMyNsOjM7zMqauUAUFwoNTGv44HFOHdy5F0U=
+Endpoint = 34.70.170.253:51820
+AllowedIPs = 10.1.1.1/3
+```
+
 #### List the parameters which we can read
 ```bash
 root@cebd83b7652e:/opt/nmf/cli-tool# ./cli-tool.sh parameter list -r maltcp://10.1.1.1:1025/camera-Directory
