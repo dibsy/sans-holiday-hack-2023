@@ -58,6 +58,7 @@ id: 2 | numerical_mode: 1 | str_mode: Sun Point Mode | str_desc: When pointing_m
 ```SQL
 ;DESCRIBE satellite_query;
 ```
+- Column ```jid``` probably is "Job ID" , ```objects``` field is the Java serialized payload and ```results``` is the output generated after executing the serialized payload 
 ```
 COLUMN_NAME: jid | COLUMN_TYPE: int(11) | IS_NULLABLE: NO | COLUMN_KEY: PRI | COLUMN_DEFAULT: null | EXTRA: auto_increment | 
 COLUMN_NAME: object | COLUMN_TYPE: blob | IS_NULLABLE: YES | COLUMN_KEY:  | COLUMN_DEFAULT: null | EXTRA:  | 
