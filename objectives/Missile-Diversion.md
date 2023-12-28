@@ -146,3 +146,8 @@ public class SatelliteQueryFileFolderUtility implements Serializable {
     }
 }
 ```
+#### Attack Methodology
+- Create a query to update the table ```pointing_mode``` : ```UPDATE pointing_mode SET numerical_mode = 1 WHERE id = 1```
+- Create a serialized object of the same class we found above and dump the serialized data in HEX format
+- Insert the serialized data in the ```missile_targeting_system``` table
+
