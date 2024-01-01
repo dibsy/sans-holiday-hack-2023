@@ -47,7 +47,9 @@ When we press the "CAST" button and "REEL" button the internals works in these f
 #### Our Auto Fishing Bot
 
 - The code has 2 segments : One to Cast and another to REEL
-- 
+- When the "Cast Line" is not clicked, ( as from state 2 ), cast the fishing rod"
+- When the "Reel It in" is lit in red, reel the fishing rod ( as from state 4 )
+  
 ```javascript
     function reel-me() {
         var button = document.querySelector('.reelitin.gotone');
