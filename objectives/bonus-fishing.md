@@ -7,8 +7,6 @@
         }
     }
 
-    // Check and click the button when the page loads
-    window.addEventListener('load', checkAndClickButton);
     setInterval(checkAndClickButton, 1000);
 
 
