@@ -1,4 +1,5 @@
 ## Objective
+Visit Ginger Breddie in Santa's Shack on Christmas Island to help him with some basic Linux tasks. It's in the southwest corner of Frosty's Beach.
 
 ## Solution
 
