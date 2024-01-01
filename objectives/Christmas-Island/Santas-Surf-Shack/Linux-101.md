@@ -49,7 +49,10 @@ env
 cd workshop
 ```
 
-- A troll is hiding in one of the workshop toolboxes. Use "grep" while ignoring case to find which toolbox the troll is in. ```grep -ir  "troll*" .```
+- A troll is hiding in one of the workshop toolboxes. Use "grep" while ignoring case to find which toolbox the troll is in.
+```
+grep -ir  "troll*" .
+```
 
 - A troll is blocking the present_engine from starting. Run the present_engine binary to retrieve this troll.
 ```
