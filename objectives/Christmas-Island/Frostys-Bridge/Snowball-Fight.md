@@ -15,7 +15,7 @@ There are couple of ways to solve this challege
 
 #### Automation
 
-- In a multi player mode we can mimic the attack of the 
+- In a multi player mode we can mimic the attack of the Elf the Dwarf
 
 ```Javascript
 function godMode(){
