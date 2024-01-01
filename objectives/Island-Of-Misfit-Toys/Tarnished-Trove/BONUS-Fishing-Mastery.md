@@ -74,6 +74,14 @@ When we press the "CAST" button and "REEL" button the internals works in these f
     setInterval(cast-me, 1000);
 ```
 
+#### Finding our fishes image
+- Each fish is stored at ```https://2023.holidayhackchallenge.com/sea/assets/fish/<HASH>.png```
+- We can get these hashes from playerData object that stores all the game data of the user
+```javascript
+for(i=0;i<playerData.fishCaught.length;i++){
+    console.log("<img src=\"https://2023.holidayhackchallenge.com/sea/assets/fish/"+playerData.fishCaught[i].hash+".png\">")
+}
+```
 
 ### Fishes
 <img src="https://2023.holidayhackchallenge.com/sea/assets/fish/53d5545920b15f6f9d26aea7b8b68070.png">
