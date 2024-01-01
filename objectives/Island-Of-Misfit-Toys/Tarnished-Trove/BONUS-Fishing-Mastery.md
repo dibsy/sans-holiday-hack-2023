@@ -74,6 +74,11 @@ When we press the "CAST" button and "REEL" button the internals works in these f
 ```
 
 #### Finding our fishes image
+- Although most of the fishes can be caught from a single locations, we need to move around for specfic fishes.
+- Some fishes might not be present at all locations and we need to use heatmap to head to the location.
+- We can overlay the heatmap on the minimap or replace the minimap locally with the heatmap to get the location of the fishes.
+
+#### Getting our fishes images
 - Each fish is stored at ```https://2023.holidayhackchallenge.com/sea/assets/fish/<HASH>.png```
 - We can get these hashes from playerData object that stores all the game data of the user
 ```javascript
