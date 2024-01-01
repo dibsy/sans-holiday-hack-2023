@@ -1,1 +1,27 @@
 # sans-holiday-hack-2023
+
+
+ - Holiday Hack Orientation
+ - Snowball Fight
+ - Linux 101
+ - Reportinator
+ - Azure 101
+ - Luggage Lock
+ - Linux PrivEsc
+ - Faster Lock Combination
+ - Game Cartridges: Vol 1
+ - Game Cartridges: Vol 2
+ - Game Cartridges: Vol 3
+ - Na'an
+ - KQL Kraken Hunt
+ - Phish Detection Agency
+ - Hashcat
+ - Elf Hunt
+ - Certificate SSHenanigans
+ - The Captain's Comms
+ - Active Directory
+ - Space Island Door Access Speaker
+ - Camera Access
+ - Missile Diversion
+ - BONUS! Fishing Guide [Writeup]
+ - BONUS! Fishing Mastery [Writeup]
