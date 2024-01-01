@@ -19,14 +19,13 @@ All the presents on this system have been stolen by trolls. Capture trolls by fo
 
 - Good job but it looks like another troll hid itself in your home directory. Find the hidden troll! ```ls -la```
 
-Excellent, now find the troll in your command history. ```history```
+- Excellent, now find the troll in your command history. ```history```
 
-Find the troll in your environment variables. ```env```
+- Find the troll in your environment variables. ```env```
 
-Next, head into the workshop.```cd workshop ```
+- Next, head into the workshop.```cd workshop ```
 
-A troll is hiding in one of the workshop toolboxes. Use "grep" while ignoring case to find which toolbox the troll is in.
-```grep -ir  "troll*" .```
+- A troll is hiding in one of the workshop toolboxes. Use "grep" while ignoring case to find which toolbox the troll is in. ```grep -ir  "troll*" .```
 
 A troll is blocking the present_engine from starting. Run the present_engine binary to retrieve this troll.``` ls -la | grep present
 ```
