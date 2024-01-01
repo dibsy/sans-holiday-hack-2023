@@ -10,16 +10,14 @@ All the presents on this system have been stolen by trolls. Capture trolls by fo
 - Perform a directory listing of your home directory to find a troll and retrieve a present!
 ```ls```
 
-
 - Now find the troll inside the troll.
 ```cat troll_19315479765589239 | grep -i "troll"```
 
+- Great, now remove the troll in your home directory. ```rm troll_19315479765589239```
 
-Great, now remove the troll in your home directory. ```rm troll_19315479765589239```
+- Print the present working directory using a command. ```pwd```
 
-Print the present working directory using a command. ```pwd```
-
-Good job but it looks like another troll hid itself in your home directory. Find the hidden troll! ```ls -la```
+- Good job but it looks like another troll hid itself in your home directory. Find the hidden troll! ```ls -la```
 
 Excellent, now find the troll in your command history. ```history```
 
