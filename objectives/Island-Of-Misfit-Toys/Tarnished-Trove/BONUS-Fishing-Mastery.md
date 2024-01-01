@@ -64,8 +64,7 @@ When we press the "CAST" button and "REEL" button the internals works in these f
 ```
 ```javascript
     function cast-me() {
-        var button = document.querySelector('.castreel');
-        
+        var button = document.querySelector('.castreel');        
         if (button && button.style.display === 'block') {
             socket.send(`cast`);
         }
