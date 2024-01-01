@@ -27,13 +27,13 @@ All the presents on this system have been stolen by trolls. Capture trolls by fo
 
 - A troll is hiding in one of the workshop toolboxes. Use "grep" while ignoring case to find which toolbox the troll is in. ```grep -ir  "troll*" .```
 
-A troll is blocking the present_engine from starting. Run the present_engine binary to retrieve this troll.``` ls -la | grep present
+- A troll is blocking the present_engine from starting. Run the present_engine binary to retrieve this troll.
 ```
-```chmod +x  present_engine ```
+ls -la | grep present
+chmod +x  present_engine
+```
 
-
-Trolls have blown the fuses in /home/elf/workshop/electrical. cd into electrical and rename blown_fuse0 to fuse0.
-
+- Trolls have blown the fuses in /home/elf/workshop/electrical. cd into electrical and rename blown_fuse0 to fuse0.
 ```
 /home/elf/workshop/electrical
 mv blown_fuse0 fuse0
