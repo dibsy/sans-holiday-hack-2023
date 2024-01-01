@@ -13,7 +13,9 @@ There are couple of ways to solve this challege
 - This will spawn a Elf the Dwarf and together we can defeat Santa to win the game.
 - We will make the players health to a higher value ```player.health=999;``` using dev console.
 
-## Automation
+#### Automation
+
+- In a multi player mode we can mimic the attack of the 
 
 ```Javascript
 function godMode(){
