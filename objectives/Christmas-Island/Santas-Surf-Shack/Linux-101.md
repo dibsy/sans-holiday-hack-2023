@@ -38,12 +38,10 @@ chmod +x  present_engine
 /home/elf/workshop/electrical
 mv blown_fuse0 fuse0
 ```
-Now, make a symbolic link (symlink) named fuse1 that points to fuse0 ```ln -s fuse0 fuse1```
 
-Make a copy of fuse1 named fuse2.
-```
- cp fuse1 fuse2
-```
+- Now, make a symbolic link (symlink) named fuse1 that points to fuse0 ```ln -s fuse0 fuse1```
+
+- Make a copy of fuse1 named fuse2. ```cp fuse1 fuse2```
 
 We need to make sure trolls don't come back. Add the characters "TROLL_REPELLENT" into the file fuse2.
 ```
@@ -54,7 +52,6 @@ Find the troll somewhere in /opt/troll_den.
 ```
 cd /opt/troll_den
 find . -iname *troll*
-
 ```
 
 Find the file somewhere in /opt/troll_den that is owned by the user troll.
