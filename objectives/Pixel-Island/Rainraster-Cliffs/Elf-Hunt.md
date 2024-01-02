@@ -15,6 +15,6 @@ score=100
 - Decode the JWT
 - Change the speed to -100 to lower the speed
 - Convert it back to JWT and update in the cookie
-- Shoot the elfves at lower speed
+- Shoot the elfves at lower speed to achieve score of 75
 
 ![image](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/97e77ee4-3b84-49fb-8998-388024f092b0)
