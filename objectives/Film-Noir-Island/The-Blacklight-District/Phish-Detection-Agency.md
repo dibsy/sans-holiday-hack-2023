@@ -32,3 +32,5 @@
 ```
 {from: 'oliver.thomas@geeseislands.com', to: 'admin.research@geeseislands.com', headers: 'Return-Path: <oliver.thomas@otherdomain.com>\nRecei…/48edL9XkF2R8jTtKgZd9JbOOyD4EHD6uLX5;\nDMARC: Pass', subject: 'New Research Project Kickoff', content: '<p>Excited to announce the kickoff of our <strong>…NPT contribute to our research methodologies?</p>', …}
 ```
+
+![image](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/7ab4ed0e-2da3-4752-9dc5-b6cf8cfa30c7)
