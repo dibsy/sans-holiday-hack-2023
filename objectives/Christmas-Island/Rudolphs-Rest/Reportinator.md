@@ -2,3 +2,31 @@
 Noel Boetie used ChatNPT to write a pentest report. Go to Christmas Island and help him clean it up.
 
 ## Solution
+
+#### The Wicked Way : Bruteforce
+
+- Although the intended way is to read the report and mark them as false postive or valid finding, we can solve this using bruteforce
+- The bruteforce would require a smaller effort as the input can either be ```0``` or ```1``` which makes the total combination of 512
+- We will use the ClusterBomb Option of Burp Intruder with 9 wordlists with each wordlist having ```0``` and ```1```
+  
+```http
+POST /check HTTP/2
+Host: hhc23-reportinator-dot-holidayhack2023.ue.r.appspot.com
+Cookie: ReportinatorCookieYum=eyJ1c2VyaWQiOiI4MWU3MGM0NC1hZWQ5LTQ4ZDItYTQ4YS00MGQ2OWJlOTc3ZjMifQ.ZZNU5A.dSBjAvqiMqpuEarTGq5yh55lPFw
+Content-Length: 89
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.71 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Origin: https://hhc23-reportinator-dot-holidayhack2023.ue.r.appspot.com
+
+Referer: https://hhc23-reportinator-dot-holidayhack2023.ue.r.appspot.com/?&challenge=reportinator&username=dibsyhex&id=81e70c44-aed9-48d2-a48a-40d69be977f3&area=ci-rudolphsrest&location=33,28&tokens=reportinator&dna=ATATATTAATATATATATATGCATATATATATTATAGCCGATATATATATATTAATATATATATATATATATATATTAGCATATATATATATGCGCATATATATATATATATATATTATA
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+input-1=0&input-2=0&input-3=0&input-4=0&input-5=0&input-6=0&input-7=0&input-8=0&input-9=0
+```
+
+Invalid Resoponse ( Length : 274 or 278 )
+```
+{"error":"FAILURE"}
+```
