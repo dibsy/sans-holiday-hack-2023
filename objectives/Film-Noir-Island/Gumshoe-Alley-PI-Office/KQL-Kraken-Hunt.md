@@ -1,3 +1,8 @@
+## Objective
+Use Azure Data Explorer to uncover misdeeds in Santa's IT enterprise. Go to Film Noir Island and talk to Tangle Coalbox for more information.
+
+## Solutions
+
 - How many Craftperson Elf's are working from laptops? ```25```
 ```Kql
 Employees 
