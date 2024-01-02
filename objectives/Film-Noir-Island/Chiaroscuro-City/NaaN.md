@@ -112,6 +112,14 @@ def play_cards(csv_card_choices, request_id):
         raise ValueError(err)
 
 ```
+#### NaN concepts
+
+```python
+numbers = 1337
+boo = float("NaN")
+magic = boo+numbers
+print(magic) //output nan
+```
 #### Inject NaN in all the 5 numbers and send
 ```json
 {"play":"NaN,NaN,NaN,NaN,NaN"}
