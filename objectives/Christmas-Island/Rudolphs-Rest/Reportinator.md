@@ -57,7 +57,7 @@ Valid Response
 
 #### Wrong Pentest Findings
 
-
+3. ```By intercepting HTTP request traffic on 88555/TCP, malicious a...``` - Not a valid port 
 
 #### Success
 
