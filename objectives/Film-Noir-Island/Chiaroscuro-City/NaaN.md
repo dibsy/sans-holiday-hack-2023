@@ -3,6 +3,13 @@
 
 ## Solution
 
+#### Trigger an error
+- Trigger an error by injecting hex data 0x5
+
+#### Code Analysis
+```
+{"play":"0x5,6,7,8,9"}
+```
 ```python3
 # Error in function named play_cards:
 
