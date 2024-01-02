@@ -112,3 +112,15 @@ def play_cards(csv_card_choices, request_id):
         raise ValueError(err)
 
 ```
+#### Inject NaN in all the 5 numbers and send
+```json
+{"play":"NaN,NaN,NaN,NaN,NaN"}
+```
+
+#### Forge for the win
+
+- For every successful response replay the old cookie with the new cookie
+- Once the score reached 10 we would get the win success hash in our response
+```json
+"conduit":{"hash":"a2a6c9bcc95608962d98d885e847c08e36908e00048cedf000fd259bd02e6f61","resourceId":"b5187f3e-8cd5-48c3-9796-001f332ea558"},
+```
