@@ -2,7 +2,7 @@
 Go to Pixel Island and review Alabaster Snowball's new SSH certificate configuration and Azure Function App. What type of cookie cache is Alabaster planning to implement?
 ## Solution
 
-#### Alabaster Snowball
+#### Generate a new ssh key pair and ssh in
 
 - Generate a new ssh key pair and paste the public key here to genrate the ssh certificates
 
