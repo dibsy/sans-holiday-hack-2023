@@ -2,6 +2,11 @@
 Help Garland Candlesticks on the Island of Misfit Toys get back into his luggage by finding the correct position for all four dials
 
 ## Solution
+
+#### Unintended Automated Way 
+- Every validation is done using web sockets.
+- There can be 9000 valid combinations. We bruteforce our way in by sending all combinations by socket messages
+ 
 ```Javascript
 function addwhitespace(i){
 	t = (""+i).length;
