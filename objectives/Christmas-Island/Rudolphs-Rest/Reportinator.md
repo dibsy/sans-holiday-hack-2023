@@ -55,10 +55,11 @@ Valid Response
 {"hash":"7fe1681630ab878a61b03421b14a0e34fe726cb726e860672bc6e3a6e4d51e0f","resourceId":"81e70c44-aed9-48d2-a48a-40d69be977f3"}
 ```
 
-#### Wrong Pentest Findings
+#### Wrong Pentest Findings ( Right Process )
 
 3. ```By intercepting HTTP request traffic on 88555/TCP, malicious a...``` - Not a valid port 
-
+6. The XSS payload is wrong
+7. ```When given an HTTP 7.4.33 request,...``` - There is no such HTTP Version
 #### Success
 
 Report Validation Complete
