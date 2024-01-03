@@ -5,13 +5,14 @@ Go to Pixel Island and review Alabaster Snowball's new SSH certificate configura
 #### Generate a new ssh key pair and ssh in
 
 - Generate a new ssh key pair and paste the public key here to genrate the ssh certificates
+- https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl
 ```json
 {
     "ssh_cert": "rsa-sha2-512-cert-v01@openssh.com AAAAIXJzYS1zaGEyLTUxMi1jZXJ0LXYwMUBvcGVuc3NoLmNvbQAAACY5Mzg2ODgyMDQzNDA4MTA5NDQ5OTI3OTUxNzU0NDIxOTU4NjkxOAAAAAMBAAEAAAGBAK8456UPjgvnkIJZycq+txILqdcSnfnoyKZxeXp3eRdvXtlKnFwr68pkLyxfUYuqES3n+ZHnfr1GEN6Yz63L6xpuUEwdAS1EjkYJpQlvaLB33xGc3oTbuylmvX+EL8nr1GnSRo9bqCYGeLiNj+7ZfJbYAdcbo359L+Q2Akx9goBa9ZN2p/hmmPdgtBcw0GXCDCPgX48/E03vuq5rtfZG3wjslQyLKiOXopd8tJS2oygGCA7/BRjvSyaNLZUHwZgsprDgScx7Vw/n1YAMmKy1Pkj9onVDWxd0WEX2ABk92oMPq1oDGD07BylwC/kU6jRQkCUIy4Goez0+QsK/4Zp9CHWgkj9eUOGmoHa9UROJQ3/Yixm0VEl2+AUQYQcVJCWNzE1feJWyOUtDVNGJP38Rx5mZGB7B8G0sfdaNAN3b37Z+1ElKiulIVUicBStAYWRSnRNoyR1pQMD0J5t26MBCFR0OHlreVeLYUlISBNPPFsYRW0qRLsuejKHKTQcRzqb78QAAAAAAAAABAAAAAQAAACQzMDM3ZDE0ZS1iMzk5LTRlMzAtOTcyNC00NjViNmQ4MmU0MjUAAAAHAAAAA2VsZgAAAABllK2mAAAAAGW5mNIAAAAAAAAAEgAAAApwZXJtaXQtcHR5AAAAAAAAAAAAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIGk2GNMCmJkXPJHHRQH9+TM4CRrsq/7BL0wp+P6rCIWHAAAAUwAAAAtzc2gtZWQyNTUxOQAAAEAVghDgpoAIESyZJhQR5IYp4zGv6TBMQb9/i7ZZb8Tsu1NUlDc8zeb78oGYJ/LxXUoFDlIG8oA6YeNHZXe+y0IF ",
     "principal": "elf"
 }
 ```
-https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl) 
+
 
 ```bash
 ssh monitor@ssh-server-vm.santaworkshopgeeseislands.org -i  mysshkey -i mysshkey.cert
