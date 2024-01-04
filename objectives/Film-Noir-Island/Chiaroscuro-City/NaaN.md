@@ -113,14 +113,16 @@ def play_cards(csv_card_choices, request_id):
 
 ```
 #### NaN concepts 1
-
+- ```float(str)``` can process a string "NaN" without any error
+- When addedd or multiplied or some other operation is performed with the ```nan``` it is nan which wins
 ```python
 numbers = 1337
 boo = float("NaN")
 magic = boo+numbers
 print(magic)
-
-//output nan
+```
+```output
+>nan
 ```
 #### NaN concepts 2
 
