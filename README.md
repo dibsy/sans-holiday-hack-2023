@@ -2,7 +2,7 @@
 
 
  - Holiday Hack Orientation [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Frostys-Bridge/Holiday-Hack-Orientation.md)
- - Snowball Fight
+ - Snowball Fight 
  - Linux 101
  - Reportinator
  - Azure 101
