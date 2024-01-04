@@ -5,6 +5,8 @@ Help Sparkle Redberry with some Azure command line skills. Find the elf and the 
 ```
 az help | less
 ```
+#### Azure Account Information
+Execute the following command to retrieve account details:
 ```
 az account show
 {
@@ -20,6 +22,8 @@ az account show
   }
 }
 ```
+#### Resource Groups Information
+Retrieve a table view of existing resource groups:
 ```
 elf@944d88b2171c:~$ az group list --output table
 [
