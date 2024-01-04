@@ -68,6 +68,7 @@ You entered the following unique numbers: [nan, 4.0, nan, nan, nan]
 ```
 
 #### NaN injection example PoC 2
+- The code below stores 5 numbers and returns the max and the min value
 ```python
 def get_user_inputs():
     numbers = []
