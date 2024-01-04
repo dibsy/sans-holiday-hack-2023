@@ -14,7 +14,7 @@
  - Game Cartridges: Vol 2
  - Game Cartridges: Vol 3
  - Na'an
- - KQL Kraken Hunt
+ - KQL Kraken Hunt [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/Gumshoe-Alley-PI-Office/KQL-Kraken-Hunt.md)
  - Phish Detection Agency
  - Hashcat [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/Chiaroscuro-City/NaaN.md)
  - Elf Hunt
