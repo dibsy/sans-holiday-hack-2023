@@ -3,10 +3,6 @@
 
 ## Solution
 
-#### Trigger an error
-- Trigger an error by injecting hex data 0x5
-
-
 #### NaN concepts 0
 - NaN (Not a Number) is a special value representing missing or undefined Python data.
 
@@ -114,6 +110,9 @@ Lowest number: nan
 ```
 
 #### Vulnerable code analysis
+- Inject NaN
+- Bypass the unique card check
+- ```max()``` and ```min()``` returns ```nan``` is all cases
 ```python3
 # Error in function named play_cards:
 ....
