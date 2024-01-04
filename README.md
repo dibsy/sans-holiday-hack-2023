@@ -4,7 +4,7 @@
  - Holiday Hack Orientation [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Frostys-Bridge/Holiday-Hack-Orientation.md)
  - Snowball Fight 
  - Linux 101
- - Reportinator
+ - Reportinator ```Also has unintended Soultion``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Reportinator.md)
  - Azure 101
  - Luggage Lock
  - Linux PrivEsc
