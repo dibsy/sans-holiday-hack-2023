@@ -3,7 +3,7 @@ Over on Steampunk Island, Bow Ninecandle is having trouble opening a padlock. Do
 
 ## Solution
 
-#### Hacker Way
+#### Unintended Solution
 
 - On analysis of the JS code we see ```moveLockIntoUnlockedPosition()``` calls ```checkit()```
-- Just go to dev-tools and run ```checkit()```
+- Just go to dev-tools and run ```checkit()``` and we complete the challenge
