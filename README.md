@@ -1,4 +1,4 @@
-# sans-holiday-hack-2023
+# SANS Holiday Hack 2023
 
 
  - Holiday Hack Orientation
