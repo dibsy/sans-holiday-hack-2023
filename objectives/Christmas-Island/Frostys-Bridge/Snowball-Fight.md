@@ -6,14 +6,22 @@ Visit Christmas Island and talk to Morcel Nougat about this great new game. Team
 
 There are couple of ways to solve this challege
 
-#### Solution 1
+##### Solution 1 with a random stranger
+- Team up with a random player and defeat santa
+
+#### Solution 2 with Jared the Elf 
 
 - The game url to start a new games starts with the following url ```https://hhc23-snowball.holidayhackchallenge.com/room/?username=dibsyhex&roomId=8a1dcd74&roomType=public&gameType=co-op&id=6919e241-4bdb-4166-ad77-59ef1da4d19f&dna=...&singlePlayer=false```
 - We can change the parameter ```singlePlayer=false``` to ```singlePlayer=true```
 - This will spawn a Elf the Dwarf and together we can defeat Santa to win the game.
 - We will make the players health to a higher value ```player.health=999;``` using dev console.
 
-#### Automation
+#### Solution 3 with Auto Kill Enabled
+
+- Create a new room and join
+- Open Incognito and create another user with the same link but change the id value
+- Paste the code in both the devconsole
+- Wait and watch all elves auto killed and santa's heatlth auto reduced #SayNoToSnowballViolence
 
 - In a multi player mode we can mimic the attack of the Elf the Dwarf
 
