@@ -148,8 +148,6 @@ Lowest number: nan
 
 #### Forge for the win
 - Send JSON data as NaN for all the cards number
-- We would bypass the unique card check due the the concept 2 above
-- 
 ```json
 {"play":"NaN,NaN,NaN,NaN,NaN"}
 ```
@@ -162,52 +160,6 @@ Lowest number: nan
          "hash":"a2a6c9bcc95608962d98d885e847c08e36908e00048cedf000fd259bd02e6f61",
          "resourceId":"b5187f3e-8cd5-48c3-9796-001f332ea558"
       },
-      "maxItem":{
-         "num":"NaN",
-         "owner":"p"
-      },
-      "minItem":{
-         "num":"NaN",
-         "owner":"p"
-      },
-      "play_message":"Darn, how did I lose that hand!",
-      "player_cards":[
-         {
-            "num":"NaN",
-            "owner":"p"
-         },
-         {
-            "num":"NaN",
-            "owner":"p"
-         },
-         {
-            "num":"NaN",
-            "owner":"p"
-         },
-         {
-            "num":"NaN",
-            "owner":"p"
-         },
-         {
-            "num":"NaN",
-            "owner":"p"
-         }
-      ],
-      "player_score":0,
-      "score_message":"Darn, you win!",
-      "shifty_score":0,
-      "shiftys_cards":[
-         {
-            "num":0.0,
-            "owner":"s"
-         },
-         {
-            "num":9.0,
-            "owner":"s"
-         }
-      ],
-      "win_lose_tie_na":"w"
-   },
-   "request":true
+     ......
 }
 ```
