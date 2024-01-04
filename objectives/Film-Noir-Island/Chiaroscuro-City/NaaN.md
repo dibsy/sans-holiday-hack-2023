@@ -37,7 +37,7 @@ else:
 >nan
 ```
 
-#### NaN injection example PoC
+#### NaN injection example PoC 1
 - The code below is supposed to store 5 unique numbers
 - We can enter ```NaN``` 5 times and at the end of the execution the entire list will have 5 ```nan``` values
 ```python3
@@ -46,7 +46,7 @@ def get_unique_numbers():
 
     while len(unique_numbers) < 5:
         try:
-            user_input = int(input(f"Enter unique number {len(unique_numbers) + 1}: "))
+            user_input = float(input(f"Enter unique number {len(unique_numbers) + 1}: "))
             if user_input in unique_numbers:
                 print("Number already entered. Please enter a unique number.")
             else:
@@ -60,7 +60,52 @@ if __name__ == "__main__":
     unique_numbers_list = get_unique_numbers()
     print("You entered the following unique numbers:", unique_numbers_list)
 ```
+```
+Enter unique number 1: 4
+Enter unique number 2: 4
+Number already entered. Please enter a unique number.
+Enter unique number 2: NaN
+Enter unique number 3: NaN
+Enter unique number 4: NaN
+Enter unique number 5: NaN
+You entered the following unique numbers: [nan, 4.0, nan, nan, nan]
+```
 
+#### NaN injection example PoC 2
+```python
+def get_user_inputs():
+    numbers = []
+    for i in range(5):
+        try:
+            user_input = float(input(f"Enter number {i + 1}: "))
+            numbers.append(user_input)
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+            i -= 1  # Decrement the loop counter to re-enter the current input
+
+    return numbers
+
+if __name__ == "__main__":
+    user_numbers = get_user_inputs()
+
+    if user_numbers:
+        highest_number = max(user_numbers)
+        lowest_number = min(user_numbers)
+
+        print("Entered numbers:", user_numbers)
+        print("Highest number:", highest_number)
+        print("Lowest number:", lowest_number)
+```
+```
+Enter number 1: NaN
+Enter number 2: -11
+Enter number 3: 0
+Enter number 4: 3333
+Enter number 5: 44
+Entered numbers: [nan, -11.0, 0.0, 3333.0, 44.0]
+Highest number: nan
+Lowest number: nan
+```
 #### Dump code via error stacktrace
 
 - Trigger an error that will dump the code
