@@ -163,3 +163,6 @@ Lowest number: nan
      ......
 }
 ```
+
+#### Reference
+- https://www.tenable.com/blog/python-nan-injection
