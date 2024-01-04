@@ -5,7 +5,7 @@
  - Snowball Fight ```**Also has unintended Solution**``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Frostys-Bridge/Snowball-Fight.md)
  - Linux 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Santas-Surf-Shack/Linux-101.md)
  - Reportinator ```**Also has unintended Solution**``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Reportinator.md)
- - Azure 101
+ - Azure 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Azure-101.md)
  - Luggage Lock
  - Linux PrivEsc
  - Faster Lock Combination
