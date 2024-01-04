@@ -140,3 +140,4 @@ base64 -d out.txt.proc2 > img.proc2
 file img.proc2               
 img.proc2: JPEG image data, JFIF standard 1.01, aspect ratio, ...
 ```
+![image](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/60474560-0f3c-479a-b5f3-ad14718bc86e)
