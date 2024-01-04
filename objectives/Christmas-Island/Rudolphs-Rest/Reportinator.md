@@ -3,11 +3,12 @@ Noel Boetie used ChatNPT to write a pentest report. Go to Christmas Island and h
 
 ## Solution
 
-#### The Wicked Way : Bruteforce
+#### The Unintended Way : Bruteforce
 
-- Although the intended way is to read the report and mark them as false postive or valid finding, we can solve this using bruteforce
-- The bruteforce would require a smaller effort as the input can either be ```0``` or ```1``` which makes the total combination of 512
-- We will use the ClusterBomb Option of Burp Intruder with 9 wordlists with each wordlist having ```0``` and ```1```
+Although the intended method is to review the report and mark findings as false positives or valid, a bruteforce approach was successfully executed. This method involved systematically trying all possible combinations of inputs, leveraging the limited input space of 0 or 1.
+
+- Utilized the ClusterBomb option in Burp Intruder with 9 wordlists, each containing 0 and 1.
+- Modified the HTTP POST request to the /check endpoint with varying input combinations.
   
 ```http
 POST /check HTTP/2
