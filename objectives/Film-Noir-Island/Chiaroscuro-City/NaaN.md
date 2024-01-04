@@ -135,6 +135,31 @@ else:
 //There is no NaN
 ```
 
+#### NaN injection PoC
+- The code below is supposed to store 5 unique numbers
+- We can enter ```NaN``` 5 times and at the end of the execution the entire list will have 5 ```nan``` values
+```python3
+def get_unique_numbers():
+    unique_numbers = set()
+
+    while len(unique_numbers) < 5:
+        try:
+            user_input = int(input(f"Enter unique number {len(unique_numbers) + 1}: "))
+            if user_input in unique_numbers:
+                print("Number already entered. Please enter a unique number.")
+            else:
+                unique_numbers.add(user_input)
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    return list(unique_numbers)
+
+if __name__ == "__main__":
+    unique_numbers_list = get_unique_numbers()
+    print("You entered the following unique numbers:", unique_numbers_list)
+```
+
+
 #### Forge for the win
 - Send JSON data as NaN for all the cards number
 - We would bypass the unique card check due the the concept 2 above
