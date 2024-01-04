@@ -147,7 +147,8 @@ Lowest number: nan
 ```
 
 #### Forge for the win
-- Send JSON data as NaN for all the cards number
+- We will use Burp Repeater to solve the challenge.
+- Send JSON data with NaN for all the cards number
 ```json
 {"play":"NaN,NaN,NaN,NaN,NaN"}
 ```
