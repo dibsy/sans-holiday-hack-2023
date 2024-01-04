@@ -50,11 +50,13 @@ elf@944d88b2171c:~$ az group list --output table
 ]
 
 ```
-
+#### Function App Functions in northpole-rg1
+Retrieve a list of functions in the specified resource group:
 ```
 az functionapp function list --resource-group northpole-rg1
 ```
-
+#### Virtual Machines in northpole-rg2
+Retrieve information about virtual machines in northpole-rg2:
 ```
  az vm list --resource-group northpole-rg2
 
@@ -91,6 +93,8 @@ az functionapp function list --resource-group northpole-rg1
   }
 ]
 ```
+#### Run Command on NP-VM1 in northpole-rg2
+Execute a shell script on the virtual machine NP-VM1:
 ```
 elf@944d88b2171c:~$ az vm run-command invoke -g northpole-rg2 -n NP-VM1 --command-id RunShellScript --scripts "ls"
 {
