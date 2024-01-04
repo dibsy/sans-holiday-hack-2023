@@ -112,6 +112,9 @@ def play_cards(csv_card_choices, request_id):
         raise ValueError(err)
 
 ```
+#### NaN concepts 0
+- NaN (Not a Number) is a special value representing missing or undefined Python data.
+
 #### NaN concepts 1
 - ```float(str)``` can process a string "NaN" without any error
 - When addedd or multiplied or some other operation is performed with the ```nan``` it is nan which wins
