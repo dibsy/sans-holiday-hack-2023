@@ -15,7 +15,7 @@
  - Na'an
  - KQL Kraken Hunt
  - Phish Detection Agency
- - Hashcat
+ - Hashcat [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/Chiaroscuro-City/NaaN.md)
  - Elf Hunt
  - Certificate SSHenanigans
  - The Captain's Comms
