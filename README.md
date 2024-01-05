@@ -7,8 +7,8 @@
  - Linux 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Santas-Surf-Shack/Linux-101.md)
  - Reportinator ```**Also has unintended Solution**``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Reportinator.md)
  - Azure 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Azure-101.md)
- - Luggage Lock
- - Linux PrivEsc
+ - Luggage Lock 
+ - Linux PrivEsc [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Ostrich-Saloon/Linux-PrivEsc.md)
  - Faster Lock Combination
  - Game Cartridges: Vol 1
  - Game Cartridges: Vol 2
