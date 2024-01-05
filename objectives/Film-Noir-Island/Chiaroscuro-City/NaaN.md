@@ -8,15 +8,19 @@
 
 #### NaN concepts 1
 - ```float(str)``` can process a string "NaN" without any error
-- When addedd or multiplied or some other operation is performed with the ```nan``` it is nan which wins
+- When added or multiplied or any other operation is performed with the ```nan``` it is nan which wins
 ```python
 small = float("NaN")
 big = float(999.999)
 
 print(big>small)
+print(small>big)
+print(small==big)
 ```
 ```output
->False
+False
+False
+False
 ```
 #### NaN concepts 2
 
