@@ -1,0 +1,35 @@
+name: Convert to PDF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+
+    - name: Convert to PDF
+      run: |
+        find . -name '*.md' -exec pandoc -o {}.pdf {} \;
+
+    - name: Include Images
+      run: |
+        for file in $(find . -name '*.md.pdf'); do
+          pandoc --pdf-engine=pdflatex --variable graphics=yes -o "${file%.md.pdf}.pdf" "$file"
+        done
+
+    - name: Upload PDFs
+      uses: actions/upload-artifact@v2
+      with:
+        name: pdf-artifacts
+        path: ./*.pdf
