@@ -64,4 +64,4 @@ function autoPlay(){
 const intervalId = setInterval(autoPlay, 1000);
 ```
 
-![image](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/ee9a8e1f-be71-4efa-9a7f-319cec7900dd)
+![image](../../../assets/293610406-ee9a8e1f-be71-4efa-9a7f-319cec7900dd.png)
