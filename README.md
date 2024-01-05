@@ -19,7 +19,7 @@
  - Hashcat [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Scaredy-Kite-Heights/Hashcat.md)
  - Elf Hunt 
  - Certificate SSHenanigans
- - The Captain's Comms
+ - The Captain's Comms [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Steampunk-Island/Brass-Bouy-Port/The-Captains-Comms.md)
  - Active Directory
  - Space Island Door Access Speaker
  - Camera Access
