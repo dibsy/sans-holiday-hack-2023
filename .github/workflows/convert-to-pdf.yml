@@ -22,12 +22,6 @@ jobs:
       run: |
         find . -name '*.md' -exec pandoc -o {}.pdf {} \;
 
-    - name: Include Images
-      run: |
-        for file in $(find . -name '*.md.pdf'); do
-          pandoc --pdf-engine=pdflatex --variable graphics=yes -o "${file%.md.pdf}.pdf" "$file"
-        done
-
     - name: Upload PDFs
       uses: actions/upload-artifact@v2
       with:
