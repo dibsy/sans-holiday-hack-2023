@@ -51,7 +51,11 @@ INFO: Created user preferences directory.
 ```
 maltcp://10.1.1.1:1024/nanosat-mo-supervisor-Directory
 ```
+![Screenshot 2023-12-27 201709](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/72e891a4-0f96-4270-af77-e0939053fe20)
+
 - Select the Camera option and click Connect to Selected Provider
+  
+![Screenshot 2023-12-27 202047](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/9acd12eb-cd81-430a-9530-8d4accc66720)
 
 #### Enable the Camera App
 - Click on the camera and select runApp
