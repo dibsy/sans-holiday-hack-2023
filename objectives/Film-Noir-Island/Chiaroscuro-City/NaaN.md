@@ -43,7 +43,7 @@ nan
 #### NaN injection example PoC 1
 - The code below is supposed to store 5 unique numbers
 - We can enter ```NaN``` 5 times and at the end of the execution the entire list will have 5 ```nan``` values
-- Logically any number repeated will result in ```Number already entered ...```. However for ```NaN``` input, this is not the same.
+- Any number repeated will result in ```Number already entered ...```. However for ```NaN``` input, we can bypass the check.
 ```python3
 def get_unique_numbers():
     unique_numbers = set()
@@ -77,6 +77,7 @@ You entered the following unique numbers: [nan, 4.0, nan, nan, nan]
 
 #### NaN injection example PoC 2
 - The code below stores 5 numbers and returns the max and the min value
+- If we add a mix of various numbers including a "NaN", both the higest and lowest will be ```nan```
 ```python
 def get_user_inputs():
     numbers = []
@@ -111,6 +112,7 @@ Entered numbers: [nan, -11.0, 0.0, 3333.0, 44.0]
 Highest number: nan
 Lowest number: nan
 ```
+### Challenge Solution
 #### Dump code via error stacktrace
 
 - Trigger an error that will dump the code
