@@ -13,10 +13,10 @@
  - Game Cartridges: Vol 1
  - Game Cartridges: Vol 2
  - Game Cartridges: Vol 3
- - Na'an
+ - Na'an [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/Chiaroscuro-City/NaaN.md)
  - KQL Kraken Hunt [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/Gumshoe-Alley-PI-Office/KQL-Kraken-Hunt.md)
  - Phish Detection Agency [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/The-Blacklight-District/Phish-Detection-Agency.md)
- - Hashcat [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/Chiaroscuro-City/NaaN.md)
+ - Hashcat [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Scaredy-Kite-Heights/Hashcat.md)
  - Elf Hunt 
  - Certificate SSHenanigans
  - The Captain's Comms
