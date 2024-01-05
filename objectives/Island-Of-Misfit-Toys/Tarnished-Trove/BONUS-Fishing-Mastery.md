@@ -51,26 +51,26 @@ When we press the "CAST" button and "REEL" button the internals works in these f
 - When the "Reel It in" is lit in red, reel the fishing rod ( as from state 4 )
   
 ```javascript
-    function reel-me() {
+    function reelMe() {
         var button = document.querySelector('.reelitin.gotone');
         if (button) {
             socket.send(`reel`);
         }
     }
 
-    setInterval(reel-me, 1000);
+    setInterval(reelMe, 1000);
 
 
 ```
 ```javascript
-    function cast-me() {
+    function castMe() {
         var button = document.querySelector('.castreel');        
         if (button && button.style.display === 'block') {
             socket.send(`cast`);
         }
     }
 
-    setInterval(cast-me, 1000);
+    setInterval(castMe, 1000);
 ```
 
 #### Finding our fishes image
