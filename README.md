@@ -21,7 +21,7 @@
  - Certificate SSHenanigans
  - The Captain's Comms [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Steampunk-Island/Brass-Bouy-Port/The-Captains-Comms.md)
  - Active Directory
- - Space Island Door Access Speaker
+ - Space Island Door Access Speaker [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Space-Island/Spaceport-Point/Space-Island-Door-Access-Speaker.md)
  - Camera Access [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Space-Island/Zenith-SGS/Camera-Access.md)
  - Missile Diversion [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Space-Island/Zenith-SGS/Missile-Diversion.md)
  - BONUS! Fishing Guide [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Tarnished-Trove/BONUS-Fishing-Guide.md)
