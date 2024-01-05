@@ -21,7 +21,8 @@ Team up with a randomly assigned player to collaboratively defeat Santa. This dy
 1. Create and join a new room.
 2. Open an incognito window to create another user with the same link, modifying the ID value by a singe character to make it unique.
 3. Execute the provided JavaScript code in both developer consoles.
-4. Observe as all elves are automatically defeated, and Santa's health is systematically reduced. Emphasizing a non-violent approach, this strategy seeks to minimize direct player involvement in combat.
+4. The code sends WebSocket message indicating the hits of Elves and Santa,fooling the backend :) 
+5. Observe as all elves are automatically defeated, and Santa's health is systematically reduced. Emphasizing a non-violent approach, this strategy seeks to minimize direct player involvement in combat.
 
 ```Javascript
 function godMode(){
