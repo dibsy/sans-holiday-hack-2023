@@ -22,10 +22,6 @@ jobs:
       run: |
         find . -type f -name '*.md' -exec pandoc -o {}.pdf {} \;
 
-    - name: Combine PDFs
-      run: |
-        pdftk ./**/*.pdf cat output combined.pdf
-        
     - name: Upload PDFs
       uses: actions/upload-artifact@v2
       with:
