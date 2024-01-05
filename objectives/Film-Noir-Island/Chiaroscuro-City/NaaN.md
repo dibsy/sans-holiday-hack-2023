@@ -9,6 +9,7 @@
 #### NaN concepts 1
 - ```float(str)``` can process a string "NaN" without any error
 - When added or multiplied or any other operation is performed with the ```nan``` it is nan which wins
+- Some results of comparison with NaN
 ```python
 small = float("NaN")
 big = float(999.999)
@@ -24,6 +25,8 @@ False
 ```
 #### NaN concepts 2
 
+- When float converts ```NaN``` it becomes ```nan```
+- NaN conversion effect
 ```python
 boo = float("NaN")
 if boo == "NaN":
@@ -33,8 +36,8 @@ else:
     print(boo)
 ```
 ```
->There is no NaN? What is the the value of boo?
->nan
+There is no NaN? What is the the value of boo?
+nan
 ```
 
 #### NaN injection example PoC 1
