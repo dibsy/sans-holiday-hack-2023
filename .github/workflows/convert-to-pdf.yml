@@ -20,7 +20,7 @@ jobs:
 
     - name: Convert to PDF
       run: |
-        find . -name '*.md' -exec pandoc -o {}.pdf {} \;
+        find . -type f -name '*.md' -exec pandoc -o {}.pdf {} \;
 
     - name: Upload PDFs
       uses: actions/upload-artifact@v2
