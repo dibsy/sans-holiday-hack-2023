@@ -9,7 +9,7 @@
 #### NaN concepts 1
 - ```float(str)``` can process a string "NaN" without any error
 - When added or multiplied or any other operation is performed with the ```nan``` it is nan which wins
-- Some results of comparison with NaN
+- Some operations with NaN
 ```python
 small = float("NaN")
 big = float(999.999)
@@ -17,11 +17,24 @@ big = float(999.999)
 print(big>small)
 print(small>big)
 print(small==big)
+print(small -1)
+print(small +1)
+print(0*small)
+print(0/small)
+print(small/0)
 ```
 ```output
 False
 False
 False
+nan
+nan
+nan
+nan
+Traceback (most recent call last):
+  File "/home/cg/root/65988fb9cd2b1/main.py", line 12, in <module>
+print(small/0)
+ZeroDivisionError: float division by zero
 ```
 #### NaN concepts 2
 
