@@ -157,13 +157,12 @@ Lowest number: nan
 ```
 
 #### Forge for the win
-- We will use Burp Repeater to solve the challenge.
-- Send JSON data with NaN for all the cards number
+- We will use Burp Proxy to solve the challenge as there is a client side validation in place
+- We intercept the data and send JSON data with NaN for all the cards number
 ```json
 {"play":"NaN,NaN,NaN,NaN,NaN"}
 ```
-- For every successful response replace the old cookie with the new cookie
-- Once the score reached 10 we would get the win success hash in our response
+- We keep doing it till our score reaches 10 and we will find the challenge completion hash in the json response
 ```json
 {
    "data":{
