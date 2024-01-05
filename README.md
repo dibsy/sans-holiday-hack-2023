@@ -25,4 +25,4 @@
  - Camera Access
  - Missile Diversion
  - BONUS! Fishing Guide [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Tarnished-Trove/BONUS-Fishing-Guide.md)
- - BONUS! Fishing Mastery [Writeup]
+ - BONUS! Fishing Mastery [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Tarnished-Trove/BONUS-Fishing-Mastery.md)
