@@ -3,8 +3,8 @@ Visit Ginger Breddie in Santa's Shack on Christmas Island to help him with some 
 
 ## Solution
 
-- The North Pole 🎁 Present Maker:
-All the presents on this system have been stolen by trolls. Capture trolls by following instructions here and 🎁's will appear in the green bar below. Run the command "hintme" to receive a hint.
+- The North Pole Present Maker:
+All the presents on this system have been stolen by trolls. Capture trolls by following instructions here and gift's will appear in the green bar below. Run the command "hintme" to receive a hint.
 ```
 yes
 ```
