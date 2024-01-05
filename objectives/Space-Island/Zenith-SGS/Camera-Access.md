@@ -3,7 +3,7 @@ Gain access to Jack's camera. What's the third item on Jack's TODO list?
 
 ## Solution
 
-#### Unintended Solution - Solved using CLI instead of GUI
+#### Unintended Solution - Solved with a mix of GUI and CLI
 #### Start the GateXOR to get the Wireguard Client Keys
 ```
 [Interface]
@@ -63,6 +63,7 @@ maltcp://10.1.1.1:1024/nanosat-mo-supervisor-Directory
 #### Connect to Camera Directory Service and Connect to the of "Parameter" Service Provider
  
 #### Enable the "generationEnabled" of "NumberOfSnapsTaken" and "Base64SnapImage" Parameter Service
+![Screenshot 2023-12-27 202903](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/9e90882e-64b4-4829-81e5-9fc6d3bbdebd)
 
 #### Go the Action Tab and submit action for "Action Services" of "Base64SnapImage"
 
