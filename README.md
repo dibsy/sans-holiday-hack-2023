@@ -18,7 +18,7 @@
  - Phish Detection Agency [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Film-Noir-Island/The-Blacklight-District/Phish-Detection-Agency.md)
  - Hashcat [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Scaredy-Kite-Heights/Hashcat.md)
  - Elf Hunt 
- - Certificate SSHenanigans
+ - Certificate SSHenanigans [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Pixel-Island/Rainraster-Cliffs/Certificate-SSHenanigans.md)
  - The Captain's Comms [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Steampunk-Island/Brass-Bouy-Port/The-Captains-Comms.md)
  - Active Directory [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Pixel-Island/Rainraster-Cliffs/Active-Directory.md)
  - Space Island Door Access Speaker [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Space-Island/Spaceport-Point/Space-Island-Door-Access-Speaker.md)
