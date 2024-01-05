@@ -1,5 +1,5 @@
 # SANS Holiday Hack 2023
-![image](https://github.com/dibsy/sans-holiday-hack-2023/assets/1623243/7b7ac86a-ef4f-4923-a820-6637ce75e3a7)
+![image](assets/294302508-7b7ac86a-ef4f-4923-a820-6637ce75e3a7.png)
 
 
  - Holiday Hack Orientation [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Frostys-Bridge/Holiday-Hack-Orientation.md)
