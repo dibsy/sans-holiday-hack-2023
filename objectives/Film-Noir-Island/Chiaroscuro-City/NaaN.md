@@ -43,6 +43,7 @@ nan
 #### NaN injection example PoC 1
 - The code below is supposed to store 5 unique numbers
 - We can enter ```NaN``` 5 times and at the end of the execution the entire list will have 5 ```nan``` values
+- Logically any number repeated will result in ```Number already entered ...```. However for ```NaN``` input, this is not the same.
 ```python3
 def get_unique_numbers():
     unique_numbers = set()
