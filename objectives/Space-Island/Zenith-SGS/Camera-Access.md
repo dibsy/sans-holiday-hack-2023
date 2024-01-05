@@ -3,6 +3,7 @@ Gain access to Jack's camera. What's the third item on Jack's TODO list?
 
 ## Solution
 
+#### Unintended Solution - Solved using CLI instead of GUI
 #### Start the GateXOR to get the Wireguard Client Keys
 ```
 [Interface]
