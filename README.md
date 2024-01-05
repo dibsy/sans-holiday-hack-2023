@@ -9,7 +9,7 @@
  - Azure 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Azure-101.md)
  - Luggage Lock [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Square-Wheel-Yard/Luggage-Lock.md)
  - Linux PrivEsc [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Ostrich-Saloon/Linux-PrivEsc.md)
- - Faster Lock Combination
+ - Faster Lock Combination [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Steampunk-Island/Brass-Bouy-Port/Faster-Lock-Combination.md)
  - Game Cartridges: Vol 1
  - Game Cartridges: Vol 2
  - Game Cartridges: Vol 3
