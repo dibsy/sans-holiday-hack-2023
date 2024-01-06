@@ -7,7 +7,7 @@
  - Linux 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Santas-Surf-Shack/Linux-101.md)
  - Reportinator ```**Also has unintended Solution**``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Reportinator.md)
  - Azure 101 [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Christmas-Island/Rudolphs-Rest/Azure-101.md)
- - Luggage Lock [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Square-Wheel-Yard/Luggage-Lock.md)
+ - Luggage Lock ```**Also has unintended Solution**``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Square-Wheel-Yard/Luggage-Lock.md) A video demo here [Video](https://youtu.be/reiS4m6g2sY)
  - Linux PrivEsc [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Island-Of-Misfit-Toys/Ostrich-Saloon/Linux-PrivEsc.md)
  - Faster Lock Combination ```**Also has unintended Solution**``` [Writeup](https://github.com/dibsy/sans-holiday-hack-2023/blob/main/objectives/Steampunk-Island/Brass-Bouy-Port/Faster-Lock-Combination.md)
  - Game Cartridges: Vol 1
